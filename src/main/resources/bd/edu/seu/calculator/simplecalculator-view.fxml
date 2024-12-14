@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="bd.edu.seu.calculator.SimpleCalculatorController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="textLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0"
+             AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" layoutX="14.0" layoutY="30.0" prefHeight="60.0" prefWidth="250.0" style="-fx-border-color: #000;" text="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <FlowPane layoutX="8.0" layoutY="80.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+         <children>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#button7Action" prefHeight="50.0" prefWidth="60.0" text="7" />
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#button8Action" prefHeight="50.0" prefWidth="60.0" text="8" />
+            <HBox prefHeight="51.0" prefWidth="240.0">
+               <children>
+                  <Button fx:id="button9" mnemonicParsing="false" onAction="#button9Action" prefHeight="50.0" prefWidth="60.0" text="9" />
+                  <Button fx:id="buttonDivide" mnemonicParsing="false" onAction="#buttonDivAction" prefHeight="50.0" prefWidth="60.0" text="/" />
+                  <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#buttonBackAction" prefHeight="50.0" prefWidth="60.0" text="B" />
+                  <Button fx:id="buttonClear" mnemonicParsing="false" onAction="#buttonClearAction" prefHeight="50.0" prefWidth="60.0" text="C" />
+               </children>
+            </HBox>
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#button4Action" prefHeight="50.0" prefWidth="60.0" text="4" />
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#button5Action" prefHeight="50.0" prefWidth="60.0" text="5" />
+            <HBox prefHeight="51.0" prefWidth="240.0">
+               <children>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#button6Action" prefHeight="50.0" prefWidth="60.0" text="6" />
+                  <Button fx:id="buttonMul" mnemonicParsing="false" onAction="#buttonMulAction" prefHeight="50.0" prefWidth="60.0" text="x" />
+                  <Button fx:id="buttonOpenParanthesis" mnemonicParsing="false" onAction="#buttonOpenBracketAction" prefHeight="50.0" prefWidth="60.0" text="(" />
+                  <Button fx:id="buttonCloseParanthesis" mnemonicParsing="false" onAction="#buttonCloseBracketAction" prefHeight="50.0" prefWidth="60.0" text=")" />
+               </children>
+            </HBox>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#button1Action" prefHeight="50.0" prefWidth="60.0" text="1" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#button2Action" prefHeight="50.0" prefWidth="60.0" text="2" />
+            <HBox prefHeight="51.0" prefWidth="240.0">
+               <children>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#button3Action" prefHeight="50.0" prefWidth="60.0" text="3" />
+                  <Button fx:id="buttonMinus" mnemonicParsing="false" onAction="#buttonMinusAction" prefHeight="50.0" prefWidth="60.0" text="-" />
+                  <Button fx:id="buttonXSquare" mnemonicParsing="false" onAction="#buttonXSquareAction" prefHeight="50.0" prefWidth="60.0" text="X^2" />
+                  <Button fx:id="buttonXCube" mnemonicParsing="false" onAction="#buttonXCubeAction" prefHeight="50.0" prefWidth="60.0" text="X^3" />
+               </children>
+            </HBox>
+            <Button fx:id="button0" mnemonicParsing="false" onAction="#button0Action" prefHeight="50.0" prefWidth="60.0" text="0" />
+            <Button fx:id="buttonPoint" mnemonicParsing="false" onAction="#buttonPointAction" prefHeight="50.0" prefWidth="60.0" text="." />
+            <HBox prefHeight="51.0" prefWidth="240.0">
+               <children>
+                  <Button fx:id="buttonPercent" mnemonicParsing="false" onAction="#buttonPrecentAction" prefHeight="50.0" prefWidth="60.0" text="\%" />
+                  <Button fx:id="buttonPlus" mnemonicParsing="false" onAction="#buttonPlusAction" prefHeight="50.0" prefWidth="60.0" text="+" />
+                  <Button fx:id="buttonResults" mnemonicParsing="false" onAction="#buttonResultAction" prefHeight="50.0" prefWidth="122.0" style="-fx-background-color: #0000FF;" text="=" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
